@@ -12,7 +12,10 @@ PRODUCT_SHIPPING_API_LEVEL := 32
 
 # A/B
 ENABLE_VIRTUAL_AB := true
+
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
+
+$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
 
 AB_OTA_UPDATER := true
 AB_OTA_PARTITIONS += \
