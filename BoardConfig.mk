@@ -10,6 +10,9 @@ DEVICE_PATH := device/coolpad/CP23NV3
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
 
+# Allowing "PRODUCT_COPY_FILES" copy ELF files
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
